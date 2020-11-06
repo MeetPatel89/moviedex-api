@@ -9,8 +9,9 @@ const movies = require('./movies-dataset.json');
 const app = express();
 
 app.use(morgan('tiny'));
-app.use(cors());
 app.use(helmet());
+app.use(cors());
+
 
 
 // Middleware function to validate bearer token
